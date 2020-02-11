@@ -5,7 +5,7 @@ This code is a python wrapper that processes a list of related GitHub repos and 
 ## Prerequisites
 - Python3
   - pip3 install pyyaml
-  - pip3 install python_dateurtil
+  - pip3 install python_dateutil
 - A list of repositories to publish (SSH path)
   - Create an ssh key for github: github_rsa/github_rsa.pub
   - Upload github_rsa.pub to your GitHub SSH keys
