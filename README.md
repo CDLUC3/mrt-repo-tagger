@@ -2,6 +2,10 @@
 
 This code is a python wrapper that processes a list of related GitHub repos and tags them with a sprint number.
 
+The Merritt team uses this code to apply consistent tagging across 20+ repositories.
+
+- https://github.com/CDLUC3/mrt-doc/releases
+
 ## Prerequisites
 - Python3
   - pip3 install pyyaml
