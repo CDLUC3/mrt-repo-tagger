@@ -112,6 +112,24 @@ class MyTagger:
             command += " >> clone.txt 2>&1"
         os.system(command)
 
+    def getCountTagsForCommit(self, commit):
+        res = subprocess.run(
+            [
+                "git",
+                "tag",
+                "-l",
+                "--points-at",
+                commit
+            ],
+            capture_output=True
+        )
+        str = res.stdout.decode("utf-8").strip('\n')
+        if (str == ""):
+            return 0
+        arr = str.split('\n')
+        print("[{}]".format(",".join(arr)))
+        return len(arr)
+
     def getCommit(self, date, branch):
         if (date == None):
             res = subprocess.run(
@@ -147,13 +165,22 @@ class MyTagger:
     def tagBranch(self, repocfg, branch, tag, date, title):
         try:
             name = self.getRepoName(repocfg)
-            print(" ==> Tagging {} with {}".format(name, tag))
+            print(" ==> Tagging {} with {} for branch {}".format(name, tag, branch))
             self.dir(self.getCloneDir(repocfg))
+            if (branch != "master"):
+                self.oscall("git checkout {}".format(branch))
             commit = self.getCommit(date, branch)
-            print(commit)
-            if (commit != ""):
-                self.oscall("git tag -a -m '{}' {} {}".format(title, tag, commit))
-                self.oscall("git push origin {}".format(tag))
+            if (commit == ""):
+                print("\tNo commit found")
+                return
+            count = self.getCountTagsForCommit(commit)
+            print("\t{} tags exist for commit {}".format(count, commit))
+            if (branch != "master"):
+                if (count > 0):
+                    print("\t\tNot applying tag {}".format(tag))
+                    return
+            self.oscall("git tag -a -m '{}' {} {}".format(title, tag, commit))
+            self.oscall("git push origin {}".format(tag))
         except Exception as e:
             print(e)
             exit("Could not tag: {} with {}".format(repocfg['repo'], tag))
