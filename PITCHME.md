@@ -32,7 +32,7 @@
 
 #### Merritt Deployment Summaries
 
-- To be added for prospective deployments
+- [Sample Deployment Release](https://github.com/CDLUC3/mrt-doc/releases/tag/deploy-2020-01-30)
 - [Markdown template for each deployment](https://github.com/CDLUC3/mrt-repo-tagger/blob/master/config.yml#L97-L128)
 
 ---
