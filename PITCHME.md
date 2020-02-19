@@ -1,34 +1,34 @@
-## Merritt Repository Tagger
+#### Merritt Repository Tagger
 
 - https://github.com/cdluc3/mrt-repo-tagger
 
 +++
 
-## Merritt Code Lives in 29 Repositories
+#### Merritt Code Lives in 29 Repositories
 
 - https://github.com/CDLUC3/mrt-repo-tagger/blob/master/config.yml#L3-L93
 
 +++
 
-## Some Repos Deploy from Branches
+#### Some Repos Deploy from Branches
 
 - https://github.com/CDLUC3/mrt-repo-tagger/blob/master/config.yml#L86-L90
 
 +++
 
-## Tag Every Sprint in Every Repo
+#### Tag Every Sprint in Every Repo
 
 - https://github.com/CDLUC3/merritt-docker/releases
 
 +++
 
-## Diff by Sprint
+#### Diff by Sprint
 
 - https://github.com/CDLUC3/merritt-docker/compare/sprint-29..sprint-31
 
 +++
 
-## Merritt Release Summaries
+#### Merritt Release Summaries
 
 For the past 4 months
 
@@ -36,7 +36,7 @@ For the past 4 months
 
 +++
 
-## Merritt Deployment Summaries
+#### Merritt Deployment Summaries
 
 - To be added for prospective deployments
 - A markdown template exists
@@ -44,9 +44,9 @@ For the past 4 months
 
 ---
 
-## Code Options
+#### Code Options
 
-```
+```bash
 python3 tagger.py -h
 usage: tagger.py [-h] [--no-clone] {sprint,deploy,report,delete} ...
 
@@ -60,9 +60,9 @@ optional arguments:
 
 +++
 
-## Sprint Tagging
+#### Sprint Tagging
 
-```
+```bash
 python3 tagger.py sprint -h
 usage: tagger.py sprint [-h] [--as-of-date AS_OF_DATE] [--since SINCE]
                         [--title TITLE]
@@ -80,9 +80,9 @@ optional arguments:
 
 +++
 
-## Deployment Tagging
+#### Deployment Tagging
 
-```
+```bash
 python3 tagger.py deploy -h
 usage: tagger.py deploy [-h] [--deploy-date DEPLOY_DATE] [--since SINCE]
                         [--title TITLE]
@@ -95,9 +95,9 @@ optional arguments:
 ```
 
 +++
-## Report Generation
+#### Report Generation
 
-```
+```bash
 python3 tagger.py report -h
 usage: tagger.py report [-h] --since SINCE [--until UNTIL]
 
@@ -109,9 +109,9 @@ optional arguments:
 
 +++
 
-## Tag Cleanup
+#### Tag Cleanup
 
-```
+```bash
 python3 tagger.py delete -h
 usage: tagger.py delete [-h] tag [tag ...]
 
@@ -124,7 +124,7 @@ optional arguments:
 
 ---
 
-## Questions
+#### Questions
 
 - What approaches do other teams follow?
 - Do any teams clone their repos for backup purposes?
