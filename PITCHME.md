@@ -119,6 +119,6 @@ optional arguments:
 
 #### Questions
 
-- What approaches do other teams follow?
-- Do any teams clone their repos for backup purposes?
+- What approaches do other CDL teams follow?
+- Do any CDL teams clone repos to the CDL network for backup purposes?
   - (in case of a GitHub outage)
