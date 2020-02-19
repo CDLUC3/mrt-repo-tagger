@@ -4,43 +4,36 @@
 
 +++
 
-#### Merritt Code Lives in 29 Repositories
-
-- https://github.com/CDLUC3/mrt-repo-tagger/blob/master/config.yml#L3-L93
+#### Merritt Code Lives in [29 Repositories](https://github.com/CDLUC3/mrt-repo-tagger/blob/master/config.yml#L3-L93)
 
 +++
 
-#### Some Repos Deploy from Branches
-
-- https://github.com/CDLUC3/mrt-repo-tagger/blob/master/config.yml#L86-L90
+#### Some Repos [Deploy from Branches](https://github.com/CDLUC3/mrt-repo-tagger/blob/master/config.yml#L86-L90)
 
 +++
 
 #### Tag Every Sprint in Every Repo
 
-- https://github.com/CDLUC3/merritt-docker/releases
+- [Sprint Tags in a Code Repo](https://github.com/CDLUC3/merritt-docker/releases)
 
 +++
 
 #### Diff by Sprint
 
-- https://github.com/CDLUC3/merritt-docker/compare/sprint-29..sprint-31
+- [Diff sprint-29..sprint-31](https://github.com/CDLUC3/merritt-docker/compare/sprint-29..sprint-31)
 
 +++
 
 #### Merritt Release Summaries
 
-For the past 4 months
-
-- https://github.com/CDLUC3/mrt-doc/releases
+[Release summaries the past 6 Sprints](https://github.com/CDLUC3/mrt-doc/releases)
 
 +++
 
 #### Merritt Deployment Summaries
 
 - To be added for prospective deployments
-- A markdown template exists
-  - https://github.com/CDLUC3/mrt-repo-tagger/blob/master/config.yml#L97-L128
+- [Markdown template for each deployment](https://github.com/CDLUC3/mrt-repo-tagger/blob/master/config.yml#L97-L128)
 
 ---
 
