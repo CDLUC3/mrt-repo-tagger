@@ -86,6 +86,7 @@ repositories:
   # Newer repos
   - repo: git@github.com:CDLUC3/mrt-repo-tagger.git
   - repo: git@github.com:CDLUC3/mrt-admin-proto.git
+  - repo: git@github.com:cdlib/merritt-billing.git
   # Merritt configuration repos
   - repo: git@github.com:cdlib/mrt-ingest-profile.git
     branches:
