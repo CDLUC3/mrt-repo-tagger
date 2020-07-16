@@ -91,6 +91,9 @@ repositories:
   - repo: git@github.com:CDLUC3/uc3-aws-cli
     branches:
     - main
+  - repo: git@github.com:CDLUC3/mrt-admin-lambda
+    branches:
+    - main
   # Merritt configuration repos
   - repo: git@github.com:cdlib/mrt-ingest-profile.git
     branches:
