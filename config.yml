@@ -94,7 +94,7 @@ repositories:
   - repo: git@github.com:CDLUC3/mrt-admin-lambda.git
     branches:
     - main
-  - repo: git@github.com:CDLUC3/uc3-ssm-gem.git
+  - repo: git@github.com:CDLUC3/uc3-ssm.git
     branches:
     - main
   # Merritt configuration repos
