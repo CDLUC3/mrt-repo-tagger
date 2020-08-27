@@ -157,7 +157,7 @@ class MyTagger:
             return res.stdout.decode("utf-8").strip('\n')
 
     def tag(self, repocfg, tag, date, title):
-        self.tagBranch(repocfg, "master", tag, date, title)
+        self.tagBranch(repocfg, self.getDefaultBranch(repocfg), tag, date, title)
         if ('branches' in repocfg):
             for branch in repocfg['branches']:
                 self.tagBranch(repocfg, branch, "{}-{}".format(tag, branch), date, title)
@@ -167,7 +167,7 @@ class MyTagger:
             name = self.getRepoName(repocfg)
             print(" ==> Tagging {} with {} for branch {}".format(name, tag, branch))
             self.dir(self.getCloneDir(repocfg))
-            if (branch != "master"):
+            if (branch != "master" and branch != self.getDefaultBranch(repocfg)):
                 self.oscall("git checkout {}".format(branch))
             commit = self.getCommit(date, branch)
             if (commit == ""):
@@ -175,7 +175,7 @@ class MyTagger:
                 return
             count = self.getCountTagsForCommit(commit)
             print("\t{} tags exist for commit {}".format(count, commit))
-            if (branch != "master"):
+            if (branch != "master" and branch != self.getDefaultBranch(repocfg)):
                 if (count > 0):
                     print("\t\tNot applying tag {}".format(tag))
                     return
@@ -227,6 +227,23 @@ class MyTagger:
         until=args.until[0]
         self.tagReportRange("", "", since, until)
 
+    def tagReportRangeBranch(self, rpt, repo, since, until, branch=""):
+        try:
+            if (branch != "" and branch != "master"):
+                since = "{}-{}".format(since, branch)
+            if (branch != "" and branch != "master" and until != branch):
+                until = "{}-{}".format(until, branch)
+            self.oscall("echo '## {} {}..{}' >> {}".format(repo, since, until, rpt), echo=False)
+            self.oscall("git log --date=short --format='- %h %ad %s' {}..{} | sed -e 's/#//g' >> {}".format(since, until, rpt), echo=False)
+        except Exception as e:
+            print(e)
+
+    def getDefaultBranch(self, repocfg):
+        if ('branches' in repocfg):
+            if (len(repocfg['branches']) == 1):
+                return repocfg['branches'][0]
+        return "master"
+
     def tagReportRange(self, label, title, since, until):
         rpt = "{}/report.md".format(self.pwd)
         self.oscall("echo '# {} Release Report ({} - {})' > {}".format(title, since, until, rpt), echo=False)
@@ -234,11 +251,18 @@ class MyTagger:
             self.oscall('echo "{}" >> {}'.format(self.config[label], rpt), echo=False)
         for repocfg in self.repos:
             self.dir(self.getCloneDir(repocfg))
-            try:
-                self.oscall("echo '## {}' >> {}".format(self.getRepoName(repocfg), rpt), echo=False)
-                self.oscall("git log --date=short --format='- %h %ad %s' {}..{} | sed -e 's/#//g' >> {}".format(since,until,rpt), echo=False)
-            except Exception as e:
-                print(e)
+            defbranch = self.getDefaultBranch(repocfg)
+            if (until == "master" and defbranch != "master"):
+                repo_until = defbranch
+            else:
+                repo_until = until
+            self.tagReportRangeBranch(
+                rpt,
+                self.getRepoName(repocfg),
+                since,
+                repo_until,
+                defbranch
+            )
         print()
         print(" ** Paste the contents of {} into {}".format(rpt, self.getRepoName(self.release)))
         print()
