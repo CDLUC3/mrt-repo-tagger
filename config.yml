@@ -3,61 +3,37 @@ repositories:
   - repo: git@github.com:CDLUC3/mrt-dashboard.git
   - repo: git@github.com:CDLUC3/tomcat8_catalina_base.git
     branches:
-    - mrt-audit-stg
-    - mrt-audit01-prd
-    - mrt-audit02-prd
-    - mrt-audit03-prd
-    - mrt-audit04-prd
-    - mrt-dataone-prd
-    - mrt-dataone-stg
-    - mrt-feeder-prd
-    - mrt-feeder-stg
-    - mrt-ingest-local
-    - mrt-ingest01-prd
-    - mrt-ingest01-stg
+    - mrt-audit01x2-prd
+    - mrt-audit01x2-stg
+    - mrt-audit02x2-prd
+    - mrt-audit02x2-stg
+    - mrt-audit03x2-prd
+    - mrt-audit04x2-prd
     - mrt-ingest01x2-prd
     - mrt-ingest01x2-stg
-    - mrt-ingest02-prd
-    - mrt-ingest02-stg
     - mrt-ingest02x2-prd
     - mrt-ingest02x2-stg
-    - mrt-ingest03-prd
     - mrt-ingest03x2-prd
-    - mrt-inv-prd
-    - mrt-inv-stg
-    - mrt-inv01-prd
-    - mrt-inv01-stg
     - mrt-inv01x2-prd
     - mrt-inv01x2-stg
-    - mrt-inv02-prd
-    - mrt-inv02-stg
     - mrt-inv02x2-prd
     - mrt-inv02x2-stg
-    - mrt-node-stg
-    - mrt-node01-prd
-    - mrt-oai-prd
-    - mrt-oai-stg
-    - mrt-replic-dev
-    - mrt-replic-prd
-    - mrt-replic-stg
-    - mrt-replic01-prd
-    - mrt-replic02-prd
-    - mrt-replic03-prd
-    - mrt-replic04-prd
-    - mrt-replic05-prd
-    - mrt-store-prd
-    - mrt-store-stg
-    - mrt-store01-prd
-    - mrt-store01-stg
-    - mrt-store02-prd
-    - mrt-store02-stg
-    - mrt-storeAudit-stg
-    - mrt-storeAudit01-prd
-    - mrt-storeAudit02-prd
-    - mrt-storeAudit03-prd
-    - mrt-storeAudit04-prd
-    - mrt-sword-prd
-    - mrt-sword-stg
+    - mrt-oai01x2-prd
+    - mrt-oai01x2-stg
+    - mrt-replic01x2-prd
+    - mrt-replic01x2-stg
+    - mrt-replic02x2-prd
+    - mrt-replic02x2-stg
+    - mrt-replic03x2-prd
+    - mrt-replic04x2-prd
+    - mrt-store01x2-prd
+    - mrt-store01x2-stg
+    - mrt-store02x2-prd
+    - mrt-store02x2-stg
+    - mrt-store03x2-prd
+    - mrt-store04x2-prd
+    - mrt-sword01x2-prd
+    - mrt-sword01x2-stg
   - repo: git@github.com:CDLUC3/mrt-tomcat.git
   - repo: git@github.com:CDLUC3/uc3-etds.git
   - repo: git@github.com:CDLUC3/mrt-inventory.git
