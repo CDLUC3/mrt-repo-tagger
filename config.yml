@@ -56,7 +56,8 @@ repositories:
   # David confirmed that these are needed
   - repo: git@github.com:CDLUC3/mrt-store-admin.git
   - repo: git@github.com:CDLUC3/mrt-store-config.git
-  - repo: git@github.com:CDLUC3/mrt-tind-harvester.git
+  # remove mrt-tind-harvester from tagging until it is active again
+  # - repo: git@github.com:CDLUC3/mrt-tind-harvester.git
   - repo: git@github.com:CDLUC3/mrt-cloudhost-pub.git
   - repo: git@github.com:CDLUC3/merritt-manifest.git
   # Newer repos
