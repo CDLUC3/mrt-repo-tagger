@@ -71,6 +71,9 @@ repositories:
   - repo: git@github.com:CDLUC3/mrt-admin-lambda.git
     branches:
     - main
+  - repo: git@github.com:CDLUC3/mrt-integ-tests.git
+    branches:
+    - main
   - repo: git@github.com:CDLUC3/uc3-ssm.git
     branches:
     - main
