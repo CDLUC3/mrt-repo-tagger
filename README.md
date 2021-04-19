@@ -1,4 +1,8 @@
-# repo-tagger
+# Merritt Repository Tagger
+
+This library is part of the [Merritt Preservation System](https://github.com/CDLUC3/mrt-doc).
+
+## Purpose
 
 This code is a python wrapper that processes a list of related GitHub repos and tags them with a sprint number.
 
