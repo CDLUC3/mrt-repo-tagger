@@ -20,7 +20,9 @@ repositories:
     - main
   # Ruby code
   - repo: git@github.com:CDLUC3/mrt-dashboard.git
-  - repo: git@github.com:CDLUC3/mrt-ingest-ruby.git
+    branches:
+    - main
+ - repo: git@github.com:CDLUC3/mrt-ingest-ruby.git
   - repo: git@github.com:CDLUC3/mrt-admin-lambda.git
     branches:
     - main
