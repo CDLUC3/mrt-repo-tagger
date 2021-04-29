@@ -5,6 +5,8 @@ repositories:
   # Java Code
   - repo: git@github.com:CDLUC3/mrt-inventory.git
   - repo: git@github.com:CDLUC3/mrt-ingest.git
+    branches:
+    - main
   - repo: git@github.com:CDLUC3/mrt-sword.git
   - repo: git@github.com:CDLUC3/mrt-oai.git
   - repo: git@github.com:CDLUC3/mrt-audit.git
