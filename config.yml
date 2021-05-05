@@ -75,6 +75,8 @@ repositories:
     - stage
   # Docker Code
   - repo: git@github.com:CDLUC3/merritt-docker.git
+    branches:
+    - main
   - repo: git@github.com:CDLUC3/mrt-admin-collection.git
   # Other code
   - repo: git@github.com:CDLUC3/uc3-etds.git
