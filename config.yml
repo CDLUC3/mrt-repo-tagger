@@ -2,6 +2,8 @@ release-repo: git@github.com:CDLUC3/mrt-doc.git
 repositories:
   # Documentation
   - repo: git@github.com:CDLUC3/mrt-doc.git
+    branches:
+    - main
   # Java Code
   - repo: git@github.com:CDLUC3/mrt-inventory.git
   - repo: git@github.com:CDLUC3/mrt-ingest.git
