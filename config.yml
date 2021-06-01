@@ -82,7 +82,6 @@ repositories:
   - repo: git@github.com:CDLUC3/mrt-admin-collection.git
   # Other code
   - repo: git@github.com:CDLUC3/uc3-etds.git
-  - repo: git@github.com:cdlib/merritt-billing.git
   # Mark verified the following are Needed -- check again
   - repo: git@github.com:CDLUC3/mrt-jenkins-docker.git
   - repo: git@github.com:CDLUC3/mrt-dataONE.git
