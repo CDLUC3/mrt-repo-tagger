@@ -36,6 +36,9 @@ repositories:
   - repo: git@github.com:CDLUC3/uc3-ssm.git
     branches:
     - main
+  - repo: git@github.com:CDLUC3/mrt-cron.git
+    branches:
+    - main
   # Configuration code
   - repo: git@github.com:CDLUC3/tomcat8_catalina_base.git
     branches:
