@@ -18,6 +18,10 @@ repositories:
   - repo: git@github.com:CDLUC3/mrt-zoo.git
   - repo: git@github.com:CDLUC3/mrt-core2.git
   - repo: git@github.com:CDLUC3/cdl-zk-queue.git
+  # Build functions
+  - repo: git@github.com:CDLUC3/mrt-jenkins.git
+    branches:
+    - main
   # Java code - ad hoc tools
   - repo: git@github.com:CDLUC3/File-Analyzer.git
     branches:
