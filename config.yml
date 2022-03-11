@@ -115,6 +115,8 @@ repositories:
     - main
   # Soon to be deprecated code
   - repo: git@github.com:cdlib/mrt-dashboard-config.git
+    branches:
+    - main
   - repo: git@github.com:cdlib/merritt-docker-prv.git
   - repo: git@github.com:cdlib/mrt-conf-prv.git
 sprint-template: >
