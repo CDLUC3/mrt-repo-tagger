@@ -15,7 +15,11 @@ repositories:
     branches:
     - main
   - repo: git@github.com:CDLUC3/mrt-sword.git
+    branches:
+    - main
   - repo: git@github.com:CDLUC3/mrt-oai.git
+    branches:
+    - main
   - repo: git@github.com:CDLUC3/mrt-audit.git
     branches:
     - main
@@ -23,6 +27,8 @@ repositories:
     branches:
     - main
   - repo: git@github.com:CDLUC3/mrt-store.git
+    branches:
+    - main
   - repo: git@github.com:CDLUC3/mrt-cloud.git
     branches:
     - main
@@ -48,6 +54,8 @@ repositories:
     branches:
     - main
   - repo: git@github.com:CDLUC3/mrt-ingest-ruby.git
+    branches:
+    - main
   - repo: git@github.com:CDLUC3/mrt-admin-lambda.git
     branches:
     - main
@@ -58,6 +66,9 @@ repositories:
     branches:
     - main
   - repo: git@github.com:CDLUC3/mrt-cron.git
+    branches:
+    - main
+  - repo: git@github.com:CDLUC3/mrt-jenkins.git
     branches:
     - main
   # Configuration code
@@ -106,6 +117,9 @@ repositories:
   - repo: git@github.com:CDLUC3/mrt-admin-collection.git
   # Other code
   - repo: git@github.com:CDLUC3/uc3-etds.git
+    branches:
+    - production
+    - stage
   # Mark verified the following are Needed -- check again
   - repo: git@github.com:CDLUC3/mrt-jenkins-docker.git
   - repo: git@github.com:CDLUC3/mrt-dataONE.git
