@@ -2,75 +2,32 @@ release-repo: git@github.com:CDLUC3/mrt-doc.git
 repositories:
   # Documentation
   - repo: git@github.com:CDLUC3/mrt-doc.git
-    branches:
-    - main
   - repo: git@github.com:CDLUC3/mrt-doc-private.git
-    branches:
-    - main
   # Java Code
   - repo: git@github.com:CDLUC3/mrt-inventory.git
-    branches:
-    - main
   - repo: git@github.com:CDLUC3/mrt-ingest.git
-    branches:
-    - main
   - repo: git@github.com:CDLUC3/mrt-sword.git
-    branches:
-    - main
   - repo: git@github.com:CDLUC3/mrt-oai.git
-    branches:
-    - main
   - repo: git@github.com:CDLUC3/mrt-audit.git
-    branches:
-    - main
   - repo: git@github.com:CDLUC3/mrt-replic.git
-    branches:
-    - main
   - repo: git@github.com:CDLUC3/mrt-store.git
-    branches:
-    - main
   - repo: git@github.com:CDLUC3/mrt-cloud.git
-    branches:
-    - main
   - repo: git@github.com:CDLUC3/mrt-zoo.git
-    branches:
-    - main
   - repo: git@github.com:CDLUC3/mrt-core2.git
-    branches:
-    - main
   - repo: git@github.com:CDLUC3/cdl-zk-queue.git
-    branches:
-    - main
   # Build functions
   - repo: git@github.com:CDLUC3/mrt-jenkins.git
-    branches:
-    - main
   # Java code - ad hoc tools
   - repo: git@github.com:CDLUC3/File-Analyzer.git
-    branches:
-    - main
   # Ruby code
   - repo: git@github.com:CDLUC3/mrt-dashboard.git
-    branches:
-    - main
   - repo: git@github.com:CDLUC3/mrt-ingest-ruby.git
-    branches:
-    - main
   - repo: git@github.com:CDLUC3/mrt-admin-lambda.git
-    branches:
-    - main
   - repo: git@github.com:CDLUC3/mrt-integ-tests.git
-    branches:
-    - main
   - repo: git@github.com:CDLUC3/uc3-ssm.git
-    branches:
-    - main
   - repo: git@github.com:CDLUC3/mrt-cron.git
-    branches:
-    - main
+  # Groovy code
   - repo: git@github.com:CDLUC3/mrt-jenkins.git
-    branches:
-    - main
   # Configuration code
   - repo: git@github.com:CDLUC3/tomcat8_catalina_base.git
     branches:
@@ -112,38 +69,25 @@ repositories:
     - stage
   # Docker Code
   - repo: git@github.com:CDLUC3/merritt-docker.git
-    branches:
-    - main
-  - repo: git@github.com:CDLUC3/mrt-admin-collection.git
   # Other code
+  - repo: git@github.com:CDLUC3/mrt-store-admin.git
+    branches:
+    - master
+  # remove mrt-tind-harvester from tagging until it is active again
+  # - repo: git@github.com:CDLUC3/mrt-tind-harvester.git
+  - repo: git@github.com:CDLUC3/merritt-manifest.git
+    branches:
+    - master
+  # Python code
   - repo: git@github.com:CDLUC3/uc3-etds.git
     branches:
     - production
     - stage
-  # Mark verified the following are Needed -- check again
-  - repo: git@github.com:CDLUC3/mrt-jenkins-docker.git
-  - repo: git@github.com:CDLUC3/mrt-dataONE.git
-  # David confirmed that these are needed -- check again
-  - repo: git@github.com:CDLUC3/mrt-store-admin.git
-  - repo: git@github.com:CDLUC3/mrt-store-config.git
-  # remove mrt-tind-harvester from tagging until it is active again
-  # - repo: git@github.com:CDLUC3/mrt-tind-harvester.git
-  - repo: git@github.com:CDLUC3/mrt-cloudhost-pub.git
-  - repo: git@github.com:CDLUC3/merritt-manifest.git
-  # Python code
   - repo: git@github.com:CDLUC3/mrt-repo-tagger.git
-    branches:
-    - main
   # Shell script code
   - repo: git@github.com:CDLUC3/uc3-aws-cli.git
-    branches:
-    - main
-  # Soon to be deprecated code
+  # Soon to be deprecated code - will be retired when a Yaml based Nuxeo management system is ready
   - repo: git@github.com:cdlib/mrt-dashboard-config.git
-    branches:
-    - main
-  - repo: git@github.com:cdlib/merritt-docker-prv.git
-  - repo: git@github.com:cdlib/mrt-conf-prv.git
 sprint-template: >
   ## Major accomplishments:
 

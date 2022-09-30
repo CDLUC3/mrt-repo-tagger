@@ -54,7 +54,7 @@ class MyTagger:
 
         sp_report=subparsers.add_parser('report')
         sp_report.add_argument('--since', nargs=1, required=True)
-        sp_report.add_argument('--until', nargs=1, default=["master"])
+        sp_report.add_argument('--until', nargs=1, default=["main"])
         sp_report.set_defaults(action=self.tagReport)
 
         sp_delete=subparsers.add_parser('delete')
@@ -167,7 +167,7 @@ class MyTagger:
             name = self.getRepoName(repocfg)
             print(" ==> Tagging {} with {} for branch {}".format(name, tag, branch))
             self.dir(self.getCloneDir(repocfg))
-            if (branch != "master" and branch != self.getDefaultBranch(repocfg)):
+            if (branch != "main" and branch != self.getDefaultBranch(repocfg)):
                 self.oscall("git checkout {}".format(branch))
             commit = self.getCommit(date, branch)
             if (commit == ""):
@@ -175,7 +175,7 @@ class MyTagger:
                 return
             count = self.getCountTagsForCommit(commit)
             print("\t{} tags exist for commit {}".format(count, commit))
-            if (branch != "master" and branch != self.getDefaultBranch(repocfg)):
+            if (branch != "main" and branch != self.getDefaultBranch(repocfg)):
                 if (count > 0):
                     print("\t\tNot applying tag {}".format(tag))
                     return
@@ -211,7 +211,7 @@ class MyTagger:
         tag='deploy-{}'.format(date)
         title='Deployment {}: {}'.format(date, args.title[0])
         if (args.since):
-            self.tagReportRange("deploy-template", title, args.since[0], self.getCommit(None, "master"))
+            self.tagReportRange("deploy-template", title, args.since[0], self.getCommit(None, "main"))
         self.tag(self.release, tag, date, title)
 
     def tagDelete(self, args):
@@ -229,9 +229,9 @@ class MyTagger:
 
     def tagReportRangeBranch(self, rpt, repo, since, until, branch=""):
         try:
-            if (branch != "" and branch != "master"):
+            if (branch != "" and branch != "main"):
                 since = "{}-{}".format(since, branch)
-            if (branch != "" and branch != "master" and until != branch):
+            if (branch != "" and branch != "main" and until != branch):
                 until = "{}-{}".format(until, branch)
             self.oscall("echo '## {} {}..{}' >> {}".format(repo, since, until, rpt), echo=False)
             self.oscall("git log --date=short --format='- %h %ad %s' {}..{} | sed -e 's/#//g' >> {}".format(since, until, rpt), echo=False)
@@ -242,7 +242,7 @@ class MyTagger:
         if ('branches' in repocfg):
             if (len(repocfg['branches']) == 1):
                 return repocfg['branches'][0]
-        return "master"
+        return "main"
 
     def tagReportRange(self, label, title, since, until):
         rpt = "{}/report.md".format(self.pwd)
@@ -252,7 +252,7 @@ class MyTagger:
         for repocfg in self.repos:
             self.dir(self.getCloneDir(repocfg))
             defbranch = self.getDefaultBranch(repocfg)
-            if (until == "master" and defbranch != "master"):
+            if (until == "main" and defbranch != "main"):
                 repo_until = defbranch
             else:
                 repo_until = until
