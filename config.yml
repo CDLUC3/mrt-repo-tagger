@@ -24,6 +24,7 @@ repositories:
   - repo: git@github.com:CDLUC3/mrt-integ-tests.git
   - repo: git@github.com:CDLUC3/uc3-ssm.git
   - repo: git@github.com:CDLUC3/mrt-cron.git
+  - repo: git@github.com:CDLUC3/mrt-atom.git
   # Groovy code
   - repo: git@github.com:CDLUC3/mrt-jenkins.git
   # Configuration code
