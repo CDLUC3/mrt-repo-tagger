@@ -13,8 +13,6 @@ repositories:
   - repo: git@github.com:CDLUC3/mrt-zoo.git
   - repo: git@github.com:CDLUC3/mrt-core2.git
   - repo: git@github.com:CDLUC3/cdl-zk-queue.git
-  # Build functions
-  - repo: git@github.com:CDLUC3/mrt-jenkins.git
   # Java code - ad hoc tools
   - repo: git@github.com:CDLUC3/File-Analyzer.git
   # Ruby code
@@ -27,40 +25,6 @@ repositories:
   - repo: git@github.com:CDLUC3/mrt-atom.git
   # Groovy code
   - repo: git@github.com:CDLUC3/mrt-jenkins.git
-  # Configuration code
-  - repo: git@github.com:CDLUC3/tomcat8_catalina_base.git
-    branches:
-    - mrt-audit01x2-prd
-    - mrt-audit01x2-stg
-    - mrt-audit02x2-prd
-    - mrt-audit02x2-stg
-    - mrt-audit03x2-prd
-    - mrt-audit04x2-prd
-    - mrt-ingest01x2-prd
-    - mrt-ingest01x2-stg
-    - mrt-ingest02x2-prd
-    - mrt-ingest02x2-stg
-    - mrt-ingest03x2-prd
-    - mrt-inv01x2-prd
-    - mrt-inv01x2-stg
-    - mrt-inv02x2-prd
-    - mrt-inv02x2-stg
-    - mrt-oai01x2-prd
-    - mrt-oai01x2-stg
-    - mrt-replic01x2-prd
-    - mrt-replic01x2-stg
-    - mrt-replic02x2-prd
-    - mrt-replic02x2-stg
-    - mrt-replic03x2-prd
-    - mrt-replic04x2-prd
-    - mrt-store01x2-prd
-    - mrt-store01x2-stg
-    - mrt-store02x2-prd
-    - mrt-store02x2-stg
-    - mrt-store03x2-prd
-    - mrt-store04x2-prd
-    - mrt-sword01x2-prd
-    - mrt-sword01x2-stg
   - repo: git@github.com:CDLUC3/mrt-tomcat.git
   - repo: git@github.com:cdlib/mrt-ingest-profile.git
     branches:
@@ -68,23 +32,14 @@ repositories:
     - stage
   # Docker Code
   - repo: git@github.com:CDLUC3/merritt-docker.git
-  # Other code
-  - repo: git@github.com:CDLUC3/mrt-store-admin.git
-    branches:
-    - master
   # remove mrt-tind-harvester from tagging until it is active again
   # - repo: git@github.com:CDLUC3/mrt-tind-harvester.git
-  - repo: git@github.com:CDLUC3/merritt-manifest.git
-    branches:
-    - master
   # Python code
   - repo: git@github.com:CDLUC3/uc3-etds.git
     branches:
     - production
     - stage
   - repo: git@github.com:CDLUC3/mrt-repo-tagger.git
-  # Shell script code
-  - repo: git@github.com:CDLUC3/uc3-aws-cli.git
   # Soon to be deprecated code - will be retired when a Yaml based Nuxeo management system is ready
   - repo: git@github.com:cdlib/mrt-dashboard-config.git
 sprint-template: >
