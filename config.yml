@@ -15,6 +15,7 @@ repositories:
   - repo: git@github.com:CDLUC3/cdl-zk-queue.git
   # Java code - ad hoc tools
   - repo: git@github.com:CDLUC3/File-Analyzer.git
+  - repo: git@github.com:CDLUC3/mrt-box.git
   # Ruby code
   - repo: git@github.com:CDLUC3/mrt-dashboard.git
   - repo: git@github.com:CDLUC3/mrt-ingest-ruby.git
@@ -25,6 +26,7 @@ repositories:
   - repo: git@github.com:CDLUC3/mrt-atom.git
   # Groovy code
   - repo: git@github.com:CDLUC3/mrt-jenkins.git
+  # Config code
   - repo: git@github.com:CDLUC3/mrt-tomcat.git
   - repo: git@github.com:cdlib/mrt-ingest-profile.git
     branches:
