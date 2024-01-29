@@ -32,6 +32,9 @@ repositories:
     branches:
     - production
     - stage
+  - repo: git@github.com:CDLUC3/merritt_ldap_tools
+  # DevOps code
+  - repo: git@github.com:CDLUC3/mrt-ansible-service-restart
   # Docker Code
   - repo: git@github.com:CDLUC3/merritt-docker.git
   # remove mrt-tind-harvester from tagging until it is active again
