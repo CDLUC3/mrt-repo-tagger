@@ -16,6 +16,7 @@ repositories:
   # Java code - ad hoc tools
   - repo: git@github.com:CDLUC3/File-Analyzer.git
   - repo: git@github.com:CDLUC3/mrt-box.git
+  - repo: git@github.com:CDLUC3/mrt-maint.git
   # Ruby code
   - repo: git@github.com:CDLUC3/mrt-dashboard.git
   - repo: git@github.com:CDLUC3/mrt-ingest-ruby.git
