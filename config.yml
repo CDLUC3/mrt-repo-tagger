@@ -13,6 +13,7 @@ repositories:
   - repo: git@github.com:CDLUC3/mrt-zoo.git
   - repo: git@github.com:CDLUC3/mrt-core2.git
   - repo: git@github.com:CDLUC3/cdl-zk-queue.git
+  - repo: git@github.com:CDLUC3/mrt-zk.git
   # Java code - ad hoc tools
   - repo: git@github.com:CDLUC3/File-Analyzer.git
   - repo: git@github.com:CDLUC3/mrt-box.git
