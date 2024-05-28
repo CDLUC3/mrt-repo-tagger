@@ -10,10 +10,12 @@ repositories:
   - repo: git@github.com:CDLUC3/mrt-replic.git
   - repo: git@github.com:CDLUC3/mrt-store.git
   - repo: git@github.com:CDLUC3/mrt-cloud.git
-  - repo: git@github.com:CDLUC3/mrt-zoo.git
   - repo: git@github.com:CDLUC3/mrt-core2.git
-  - repo: git@github.com:CDLUC3/cdl-zk-queue.git
+  # Java and Ruby
   - repo: git@github.com:CDLUC3/mrt-zk.git
+  # to be deprecated
+  - repo: git@github.com:CDLUC3/cdl-zk-queue.git
+  - repo: git@github.com:CDLUC3/mrt-zoo.git
   # Java code - ad hoc tools
   - repo: git@github.com:CDLUC3/File-Analyzer.git
   - repo: git@github.com:CDLUC3/mrt-box.git
