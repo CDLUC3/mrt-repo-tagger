@@ -13,9 +13,6 @@ repositories:
   - repo: git@github.com:CDLUC3/mrt-core2.git
   # Java and Ruby
   - repo: git@github.com:CDLUC3/mrt-zk.git
-  # to be deprecated
-  - repo: git@github.com:CDLUC3/cdl-zk-queue.git
-  - repo: git@github.com:CDLUC3/mrt-zoo.git
   # Java code - ad hoc tools
   - repo: git@github.com:CDLUC3/File-Analyzer.git
   - repo: git@github.com:CDLUC3/mrt-box.git
@@ -28,8 +25,6 @@ repositories:
   - repo: git@github.com:CDLUC3/uc3-ssm.git
   - repo: git@github.com:CDLUC3/mrt-cron.git
   - repo: git@github.com:CDLUC3/mrt-atom.git
-  # Groovy code
-  - repo: git@github.com:CDLUC3/mrt-jenkins.git
   # Config code
   - repo: git@github.com:CDLUC3/mrt-tomcat.git
   - repo: git@github.com:cdlib/mrt-ingest-profile.git
@@ -39,6 +34,8 @@ repositories:
   - repo: git@github.com:CDLUC3/merritt_ldap_tools.git
   # DevOps code
   - repo: git@github.com:CDLUC3/mrt-ansible-service-restart.git
+  # DevOps code
+  - repo: git@github.com:CDLUC3/mrt-sceptre.git
   # Docker Code
   - repo: git@github.com:CDLUC3/merritt-docker.git
   # remove mrt-tind-harvester from tagging until it is active again
