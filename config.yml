@@ -36,6 +36,8 @@ repositories:
   - repo: git@github.com:CDLUC3/mrt-ansible-service-restart.git
   # DevOps code
   - repo: git@github.com:CDLUC3/mrt-sceptre.git
+  - repo: git@github.com:CDLUC3/mrt-tomcat-deploy.git
+  - repo: git@github.com:CDLUC3/mrt-service-release-manifest.git
   # Docker Code
   - repo: git@github.com:CDLUC3/merritt-docker.git
   # remove mrt-tind-harvester from tagging until it is active again
