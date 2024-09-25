@@ -25,6 +25,7 @@ repositories:
   - repo: git@github.com:CDLUC3/uc3-ssm.git
   - repo: git@github.com:CDLUC3/mrt-cron.git
   - repo: git@github.com:CDLUC3/mrt-atom.git
+  - repo: git@github.com:CDLUC3/s3-sinatra.git
   # Config code
   - repo: git@github.com:CDLUC3/mrt-tomcat.git
   - repo: git@github.com:cdlib/mrt-ingest-profile.git
