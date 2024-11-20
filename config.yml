@@ -50,6 +50,7 @@ repositories:
     - production
     - stage
   - repo: git@github.com:CDLUC3/mrt-repo-tagger.git
+  - repo: git@github.com:CDLUC3/mrt-locust.git  
   # Soon to be deprecated code - will be retired when a Yaml based Nuxeo management system is ready
   - repo: git@github.com:cdlib/mrt-dashboard-config.git
 sprint-template: >
