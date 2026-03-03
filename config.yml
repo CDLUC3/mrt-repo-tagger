@@ -45,10 +45,6 @@ repositories:
   # remove mrt-tind-harvester from tagging until it is active again
   # - repo: git@github.com:CDLUC3/mrt-tind-harvester.git
   # Python code
-  - repo: git@github.com:CDLUC3/uc3-etds.git
-    branches:
-    - production
-    - stage
   - repo: git@github.com:CDLUC3/mrt-repo-tagger.git
   - repo: git@github.com:CDLUC3/mrt-locust.git  
   # Soon to be deprecated code - will be retired when a Yaml based Nuxeo management system is ready
