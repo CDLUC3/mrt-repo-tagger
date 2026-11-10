@@ -22,18 +22,13 @@ repositories:
   - repo: git@github.com:CDLUC3/mrt-admin-lambda.git
   - repo: git@github.com:CDLUC3/mrt-integ-tests.git
   - repo: git@github.com:CDLUC3/uc3-ssm.git
-  - repo: git@github.com:CDLUC3/mrt-cron.git
   - repo: git@github.com:CDLUC3/mrt-atom.git
   - repo: git@github.com:CDLUC3/mrt-admin-sinatra.git
   - repo: git@github.com:CDLUC3/mrt-manifest-gen.git
   # Config code
-  - repo: git@github.com:CDLUC3/mrt-tomcat.git
   - repo: git@github.com:CDLUC3/mrt-ingest-profiles.git
   # DevOps code
-  - repo: git@github.com:CDLUC3/mrt-ansible-service-restart.git
-  # DevOps code
   - repo: git@github.com:CDLUC3/mrt-sceptre.git
-  - repo: git@github.com:CDLUC3/mrt-tomcat-deploy.git
   - repo: git@github.com:CDLUC3/mrt-service-release-manifest.git
   # Docker Code
   - repo: git@github.com:CDLUC3/merritt-docker.git
